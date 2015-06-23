@@ -1,0 +1,21 @@
+{
+  "name": "tv4-cmd",
+  "version": "1.0.0",
+  "description": "Command tool for JSON Schema validation.",
+  "bin": {
+    "tv4": "bin/tv4cmd.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "tv4": ">=1.1.12",
+    "nopt": ">=3.0.0"	
+  },
+  "keywords": [
+    "tv4",
+    "json-schema"
+  ],
+  "author": "steenk",
+  "license": "MIT"
+}
