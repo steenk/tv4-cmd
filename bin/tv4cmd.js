@@ -13,7 +13,7 @@ var tv4 = require('tv4'),
 		h: '--help',
 		s: '--schema',
 		j: '--json',
-		v: '--verbose'
+		v: '--verbose',
 		b: '--ban'
 	};
 
