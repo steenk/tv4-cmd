@@ -10,6 +10,7 @@ Where options are:
   -s, --schema <file>  Required
   -j, --json <file>
   -v, --verbose
+  -b, --ban  Ban unknown properties
 ```
 
 Read more about the Tiny Validator at [geraintluff/tv4](https://github.com/geraintluff/tv4).
