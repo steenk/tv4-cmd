@@ -1,6 +1,6 @@
 {
   "name": "tv4-cmd",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Command tool for JSON Schema validation.",
   "bin": {
     "tv4": "bin/tv4cmd.js"
