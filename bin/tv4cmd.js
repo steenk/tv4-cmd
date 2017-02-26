@@ -13,7 +13,8 @@ var tv4 = require('tv4'),
 		h: '--help',
 		s: '--schema',
 		j: '--json',
-		v: '--verbose'
+		v: '--verbose',
+		b: '--ban'
 	};
 
 var opt = nopt(known, short);
@@ -57,7 +58,11 @@ function validate (schema, json, out) {
 				return;
 			}
 			var data = res;
-			var valid = tv4.validate(data, sch);
+			if (opt.ban) {
+				var valid = tv4.validate(data, sch, false, true);
+			} else {
+				var valid = tv4.validate(data, sch);
+			}
 			if (! valid) {
 				console.error(new Error("JSON is not valid."));
 				if (opt.verbose) {
@@ -79,6 +84,7 @@ if (opt.schema) {
 	console.log("  -s, --schema <file>  Required");
 	console.log("  -j, --json <file>");
 	console.log("  -v, --verbose");
+	console.log("  -b, --ban  Ban unknown properties");
 	console.log();
 }
 
